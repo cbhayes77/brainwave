@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora", ui-sans-serif, system-ui, -apple-system, "Sego UI", Roboto, "Helvetica Neue", Arial;
+  --color-bg: #0f172a;
+  --color-card: rgba(255, 255, 255, .05);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+}
