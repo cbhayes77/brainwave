@@ -3,8 +3,20 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
+import Home from "./pages/Home.jsx";
 
-const router = createBrowserRouter([{ path: "/", element: <App /> }]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ],
+  },
+]);
 
 // STEP 1: Render our App component (which is the default export from App.jsx)
 // - Wrap in StrictMode to help catch potential problems
