@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/layout/Navbar.jsx";
-import "./App.css";
 
 // STEP 2: Define and export our main component (default export so main.jsx can import it)
 function App() {
