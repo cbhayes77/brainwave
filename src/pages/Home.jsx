@@ -1,6 +1,7 @@
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import FeatureCards from "../components/sections/FeatureCards.jsx";
+import LogoTicker from "../components/sections/LogoTicker.jsx";
 
 export default function Home() {
   return (
@@ -10,12 +11,9 @@ export default function Home() {
         className="min-h-[80vh] grid place-items-center text-center bg-gradient-to-b from-[#0a0a0b] to-[#1a1a1d]"
       >
         <Container>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Build smarter with modern AI
-          </h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">Build smarter with modern AI</h1>
           <p className="mt-4 max-w-prose mx-auto text-white/80 text-lg">
-            Ask questions, analyze content, and create faster-all in a simple,
-            elegant UI.
+            Ask questions, analyze content, and create faster-all in a simple, elegant UI.
           </p>
           <div className="flex mt-8 flex-wrap justify-center gap-4">
             <a
@@ -35,6 +33,7 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+      <LogoTicker />
       <FeatureCards />
     </main>
   );

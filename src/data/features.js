@@ -23,4 +23,16 @@ export const features = [
     blurb: "Share workspaces and keep everyone on the same page.",
     icon: "🤝",
   },
+  {
+    id: "collab",
+    title: "Collaborate",
+    blurb: "Share workspaces and keep everyone on the same page.",
+    icon: "🤝",
+  },
+  {
+    id: "collab",
+    title: "Collaborate",
+    blurb: "Share workspaces and keep everyone on the same page.",
+    icon: "🤝",
+  },
 ];

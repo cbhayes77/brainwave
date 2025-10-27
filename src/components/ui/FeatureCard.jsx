@@ -10,7 +10,13 @@ export default function FeatureCard({ icon, title, blurb }) {
       <h2 className="mt-3 text-lg font-semibold">{title}</h2>
       <p className="mt-2 text-white/80">{blurb}</p>
       <div className="mt-4 text-sm text-white/70 opacity-0 transition group-hover:opacity-100">
-        Learn more ➡
+        <a
+          href="/features"
+          className="mt-4 inline-block text-sm text-white/70 underline-offset-4 hover:underline
+             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded"
+        >
+          Learn more →
+        </a>
       </div>
     </article>
   );
