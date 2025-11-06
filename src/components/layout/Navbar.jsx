@@ -5,12 +5,10 @@ import Button from "../ui/Button.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
 const links = [
   { to: "/about", label: "About Me" },
   { to: "/portfolio", label: "Portfolio" },
   { to: "/resume", label: "Resume" },
-
 ];
 
 export default function Navbar() {
@@ -33,11 +31,7 @@ export default function Navbar() {
               <li key={link.to}>
                 <NavLink
                   to={link.to}
-                  className={({ isActive }) =>
-                    `transition hover:text-white ${
-                      isActive ? "text-white" : ""
-                    }`
-                  }
+                  className={({ isActive }) => `transition hover:text-white ${isActive ? "text-white" : ""}`}
                 >
                   {link.label}
                 </NavLink>
@@ -48,23 +42,21 @@ export default function Navbar() {
 
         {/* Right: Primary CTA (hide on small screens) */}
         <div className="flex-1 flex justify-end">
-            {/* Desktop CTA */}
-            <Button as="a" href="/contact" variant="primary" size="sm" className="hidden md:inline-flex">
-              Contact Me
-            </Button>
-            {/* Mobile menu button */}
-            <Button
-              variant="secondary"
-              size="sm"
-              className="md:hidden ml-2"
-              aria-label="Open menu"
-              aria-expanded={open ? "true" : "false"}
-              aria-controls="mobile-menu"
-              onClick={() => setOpen(true)}
-              iconOnly={<GiHamburgerMenu className="w-6 h-4" />}
-            >
-              
-            </Button>
+          {/* Desktop CTA */}
+          <Button as="a" href="/contact" variant="primary" size="sm" className="hidden md:inline-flex">
+            Contact Me
+          </Button>
+          {/* Mobile menu button */}
+          <Button
+            variant="secondary"
+            size="sm"
+            className="md:hidden ml-2"
+            aria-label="Open menu"
+            aria-expanded={open ? "true" : "false"}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen(true)}
+            iconOnly={<GiHamburgerMenu className="w-6 h-4" />}
+          ></Button>
         </div>
       </Container>
 
