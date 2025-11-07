@@ -19,7 +19,7 @@ export default function FeatureCards() {
         <ul className="mt-8 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl-grid-cols-4" role="list">
           {features.map((f) => (
             <li key={f.id}>
-              <FeatureCard icon={f.icon} title={f.title} blurb={f.blurb} />
+              <FeatureCard icon={f.icon} title={f.title} blurb={f.blurb} href={f.href} />
             </li>
           ))}
         </ul>
