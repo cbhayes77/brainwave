@@ -2,6 +2,7 @@ import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import FeatureCards from "../components/sections/FeatureCards.jsx";
 import Button from "../components/ui/Button.jsx";
+import TechStack from "../components/sections/TechStack.jsx";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+      <TechStack />
       <FeatureCards />
     </div>
   );
