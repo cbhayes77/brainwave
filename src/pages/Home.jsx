@@ -1,8 +1,10 @@
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
-import FeatureCards from "../components/sections/FeatureCards.jsx";
 import Button from "../components/ui/Button.jsx";
 import TechStack from "../components/sections/TechStack.jsx";
+import Projects from "../components/sections/Projects.jsx";
+import Testimonials from "../components/sections/Testimonials.jsx";
+import FinalCTA from "../components/sections/FinalCTA.jsx";
 
 export default function Home() {
   return (
@@ -27,7 +29,9 @@ export default function Home() {
         </Container>
       </Section>
       <TechStack />
-      <FeatureCards />
+      <Projects limit={3} />
+      <Testimonials limit={3} />
+      <FinalCTA />
     </div>
   );
 }
