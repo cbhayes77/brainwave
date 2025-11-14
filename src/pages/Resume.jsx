@@ -1,6 +1,5 @@
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
-import PDFViewer from "../components/ui/PDFViewer.jsx";
 
 export default function Resume() {
   return (
@@ -11,8 +10,8 @@ export default function Resume() {
         {/* Action Buttons */}
         <div className="mt-6 flex flex-wrap gap-4 justify-center">
           <a
-            href="/resume.pdf"
-            download="resume.pdf"
+            href="/resume-sample.pdf"
+            download="resume-sample.pdf"
             className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors shadow-md hover:shadow-lg"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,7 +26,7 @@ export default function Resume() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="/resume-sample.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg transition-colors shadow-md hover:shadow-lg"
@@ -45,7 +44,10 @@ export default function Resume() {
         </div>
 
         <div className="mt-8">
-          <PDFViewer pdfUrl="/resume.pdf" />
+          {/* Simple iframe PDF viewer as a workaround */}
+          <div className="w-full h-[800px] border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+            <iframe src="/resume-sample.pdf" className="w-full h-full" title="Resume PDF" />
+          </div>
         </div>
       </Container>
     </Section>
